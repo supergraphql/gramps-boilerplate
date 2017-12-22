@@ -1,0 +1,22 @@
+{
+  "name": "gramps-boilerplate",
+  "scripts": {
+    "start": "cross-env NODE_ENV=dev node src/index.js",
+    "playground": "graphql playground",
+    "deploy": "now --public && now alias && now rm --yes --safe gramps-boilerplate"
+  },
+  "dependencies": {
+    "@gramps/gramps": "^1.1.0",
+    "graphcool-binding": "0.3.2",
+    "graphql-import": "0.1.8",
+    "graphql-yoga": "0.4.3",
+    "jsonwebtoken": "8.1.0"
+  },
+  "devDependencies": {
+    "cross-env": "^5.1.3",
+    "now": "8.5.4"
+  },
+  "now": {
+    "alias": "gramps-boilerplate"
+  }
+}
