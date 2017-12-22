@@ -3,7 +3,6 @@ const fs = require('fs')
 module.exports = ({ project }) => {
   const templateName = 'gramps-boilerplate'
   replaceInFile('package.json', templateName, project)
-  replaceInFile('graphcool.yml', templateName, project)
 
   console.log(`\
 Next steps:
